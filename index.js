@@ -26,6 +26,9 @@ const userSchema = new mongoose.Schema({
   required:true,
   minlegnth:6
  }
+},
+{
+  versionKey : false
 });
 
 const User = mongoose.model("User", userSchema);
